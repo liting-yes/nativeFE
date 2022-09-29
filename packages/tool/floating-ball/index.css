@@ -1,0 +1,34 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+.native-fe.floating-ball {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);;
+}
+
+.native-fe.floating-ball #floating-ball {
+    position: fixed;
+    left: -25px;
+    top: calc(50vh - 25px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    cursor: grab;
+}
+
+.native-fe.floating-ball #floating-ball:not(#floating-ball:active) {
+    transition: left 2s ease-in-out;
+}
+
+.native-fe.floating-ball #floating-ball:active {
+    cursor: grabbing;
+}
